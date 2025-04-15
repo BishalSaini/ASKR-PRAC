@@ -1,0 +1,45 @@
+<aiml version="2.0">
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Welcome to our e-commerce store.</template>
+    </category>
+
+    <category>
+        <pattern>BUY *</pattern>
+        <template>
+            Great choice! We have a wide range of <star/>. Would you like some suggestions?
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            Can you specify your preferences (color, brand, budget)?
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            No problem! Let me know if there's anything else I can help with.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE YOUR OFFERS</pattern>
+        <template>
+            We currently have discounts on electronics and fashion. Would you like to explore?
+        </template>
+    </category>
+
+    <category>
+        <pattern>EXIT</pattern>
+        <template>
+            Thank you for visiting.
+        </template>
+    </category>
+</aiml>
+
+
+
+

@@ -1,0 +1,51 @@
+<aiml version="2.0">
+	<category>
+		<pattern>ROCK</pattern>	
+		<template> 
+			<think><set name="userMove">rock</set></think>
+			<random>
+				<li>Paper. I win</li>
+				<li>Rock. It's a tie</li>
+				<li>Scissors. You won</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>PAPER</pattern>	
+		<template> 
+			<think><set name="userMove">paper</set></think>
+			<random>
+				<li>Paper. It's a tie</li>
+				<li>Rock. You win</li>
+				<li>Scissors. I won</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>SCISSORS</pattern>	
+		<template> 
+			<think><set name="userMove">scissors</set></think>
+			<random>
+				<li>Paper. You won</li>
+				<li>Rock. I win</li>
+				<li>Scissors. It's a tie</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HELLO</pattern>	
+		<template> 
+			Welcome to the game.
+		</template>
+	</category>
+
+	<category>
+		<pattern>EXIT</pattern>	
+		<template> 
+			Exiting the game.
+		</template>
+	</category>
+</aiml>

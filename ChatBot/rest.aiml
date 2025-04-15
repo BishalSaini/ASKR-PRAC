@@ -1,0 +1,31 @@
+<aiml version="2.0">
+    <category>
+        <pattern>RECOMMEND RESTAURANT</pattern>
+        <template>What type of cuisine are you looking for? (Chinese, Indian, Italian, Thai)</template>
+    </category>
+
+    <category>
+        <pattern>I WANT * CUISINE</pattern>
+        <template>
+            Here are some popular <star/> restaurants:
+            <think><set name="cuisine"><star/></set></think>
+            <condition name="cuisine">
+                <li value="italian">Spaghetti, Risotto</li>
+                <li value="indian">Puran Poli, Chicken Curry</li>
+                <li value="thai">Mango Rice</li>
+                <li value="chinese">Noodles, Soup</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>Enjoy your meal!</template>
+    </category>
+
+    <category>
+        <pattern>QUIT</pattern>
+        <template>Goodbye!</template>
+    </category>
+
+</aiml>
