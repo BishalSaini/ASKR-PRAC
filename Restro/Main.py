@@ -3,7 +3,7 @@ import aiml
 kernel = aiml.Kernel()
 kernel.learn("rest.aiml")
 
-print("recommendation is running")
+print("Recommendation is running")
 print("type quit to exit")
 
 while True:
